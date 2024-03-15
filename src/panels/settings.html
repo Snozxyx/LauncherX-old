@@ -1,0 +1,93 @@
+
+<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<video autoplay muted loop id="myVideo">
+  <source src="./assets/images/gif/cherry-leaves.1920x1080.mp4" type="video/mp4">
+</video>
+<div class="settings-content">
+</div>
+<div class="sidebar">
+    <div class="account-side  " aria-label="I connected">
+        <img class="player-head account-image account-side-img"  alt="" onclick="parent.location='panels/skin.html'"/>
+        <div class="account-side-connected green"></div>
+      </div>
+      <img class="account-image" alt="">
+    <div class="box panels">
+        <!-- <div id="home" aria-label="Home" class=" button icon-home save-tabs-btn"></div>
+        <div aria-label="Settings" class="button-active settings-btn button icon-settings close"></div>
+        <div aria-label="Accounts" class="settings-btn button  tab-btn active-tab-btn default-tab-btn fa-solid fa-user "></div>
+        <div aria-label="Java" class="settings-btn button fa-solid fa-hammer tab-btn "></div>
+        <div aria-label="Launcher" class="settings-btn button fa-solid fa-folder tab-btn "></div>
+        <div aria-label="Mods" class="settings-btn button fa-solid fa-plus tab-btn"></div> -->
+
+      <div id="home" aria-label="Home" class=" button icon-home save-tabs-btn"></div>
+      <div aria-label="Settings" class="button-active settings-btn button icon-settings close"></div>
+      <div aria-label="Accounts" class="settings-btn button icon-user tab-btn active-tab-btn default-tab-btn "></div>
+      <div aria-label="Java" class="settings-btn button icon-hammer tab-btn "></div>
+      <div aria-label="Launcher" class="settings-btn button icon-folder tab-btn   "></div>
+      <div aria-label="Mods" class="settings-btn button fa-solid fa-plus " onclick="parent.location='panels/mods.html'"></div> 
+    </div>
+    <div class="box play">
+      <div aria-label="Save" class="button icon-check save-tabs-btn1" style="color: green;"></div>
+    </div>
+</div>
+<div id="panels">
+</div>
+
+<div class="tabs-settings-content active-tab-content">
+    <div class="center-align">
+        <button class="add-account">Add New Account</button>
+        <div class="accounts"></div>
+    </div>
+</div>
+
+<div class="tabs-settings-content">
+    <div class="settings-content-scroll">
+        <div class="name-big" style="display: flex; justify-content: center; margin-bottom: 15px">Your RAM settings.</div>
+        <div class="java-settings">
+            <div class="information">
+                Setting the RAM allocated to your game, a larger amount will increase your game's performance. Note that it's advisable not to allocate too much RAM as it can cause performance loss in other applications.
+                <br><br>
+                <b>- Maximum RAM:</b> Indicates the total amount of RAM allocated to your game. It's recommended not to exceed 50% of the total RAM on your PC for proper functioning. If your computer has more than 8GB of RAM, we recommend allocating 4GB. If your computer has 4GB or less, do not allocate more than 2GB.
+                <br><br>
+                <b>- Minimum RAM:</b> Indicates the minimum amount of RAM allocated when your game starts. It's recommended not to allocate more than 3GB for this value. The typical value is 1GB.
+            </div>
+            <div class="ram-info">
+                <div class="memory-slider" min="0.5" max="8" step="0.5">
+                    <div class="slider-touch-left">
+                        <span value="0 GB"></span>
+                    </div>
+                    <div class="slider-touch-right">
+                        <span value="0 GB"></span>
+                    </div>
+                    <div class="slider-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="ram-info-block">
+                    <b>You have a total of <span id="total-ram">0 GB</span> of RAM.</b><br>
+                    <b>You have <span id="free-ram">0 GB</span> of available RAM.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tabs-settings-content">
+    <div class="center-page">
+        <div class="name-big" style="display: flex; justify-content: center; margin-bottom: 15px">Game Launching.</div>
+        <div class="java-settings">
+            <div class="information">
+                Here you can choose the interaction the launcher has with the game.
+                <br>
+            </div>
+            <div class="information">
+                <input type="checkbox" class="checkbox-settings" id="launcher-close"><label for="launcher-close"><div class="checkround"></div></label> Close the launcher after launching the game.</br>
+                <input type="checkbox" class="checkbox-settings" id="launcher-close-all"><label for="launcher-close-all"><div class="checkround"></div></label> Close the game if the launcher is closed.</br>
+                <input type="checkbox" class="checkbox-settings" id="launcher-open"><label for="launcher-open"><div class="checkround"></div></label> Keep the launcher open after launching the game.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://kit.fontawesome.com/b4b6838159.js"  type="module" crossorigin="anonymous"></script>

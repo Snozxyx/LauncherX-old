@@ -1,0 +1,31 @@
+.download-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text-download,
+.progress-bar {
+	display: none;
+}
+
+.text-download {
+	font-size: 15px;
+}
+
+.progress-bar {
+	background-color: transparent;
+	height: 10px;
+}
+
+.progress-bar::-webkit-progress-bar {
+	background-color: #797979;
+	border-radius: 10px;
+}
+
+.progress-bar::-webkit-progress-value {
+	background-color: #e0a3cc;
+	border-radius: 10px;
+}
+
